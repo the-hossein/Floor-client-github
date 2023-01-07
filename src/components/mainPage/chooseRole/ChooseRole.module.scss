@@ -1,0 +1,12 @@
+.page_title{
+   text-align: center;
+   margin: 1rem auto 5rem;
+   font-size: 20pt;
+   max-width: 460px;
+   line-height: 1.6;
+   @media(max-width:600px){
+    font-size: 14pt;
+    max-width: 320px;
+  
+   }
+}

@@ -1,0 +1,62 @@
+/* @use  "./assets/style/Mix.scss"; */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("./assets/fonts/Roboto-Fontjo.com/Roboto-Light.ttf");
+  src: url("./assets/fonts/Roboto-Fontjo.com/Roboto-Light.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("./assets/fonts/Roboto-Fontjo.com/Roboto-Regular.ttf");
+  src: url("./assets/fonts/Roboto-Fontjo.com/Roboto-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotMedium";
+  src: url("./assets/fonts/Roboto-Fontjo.com/Roboto-Medium.ttf");
+  src: url("./assets/fonts/Roboto-Fontjo.com/Roboto-Medium.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --main-color: #18068ae8;
+  --main-color-hover: #170879;
+  --light-main: #18068a7d;
+  --main-pen: #757575;
+  --dark-gray: #4d4d4d;
+  --border-color: #cecece;
+  --success: #12c258;
+  --error: #f21212bc;
+  --light-gray: #cecece77;
+  --fast-transaction: all 1s ease-in-out;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "RobotoRegular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.flex {
+  display: flex;
+}
+.justify-end {
+  justify-content: end;
+}
+/* .f-p {
+  @include Mix.floor-padding;
+} */

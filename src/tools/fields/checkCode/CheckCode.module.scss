@@ -1,0 +1,29 @@
+@use "../../../assets/style/Mix";
+.otp_lable {
+  color: var(--main-pen);
+  font-size: 11pt;
+  text-align: center;
+  margin: 0.5rem auto;
+  display: block;
+}
+.code_card {
+  @include Mix.border-card;
+  width: auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+
+  input {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    width: 40px;
+    color: var(--main-pen);
+    text-align: center;
+    font-size: 14pt;
+    &:focus {
+      outline: none;
+    }
+    margin: 2px 0.5rem;
+  }
+}

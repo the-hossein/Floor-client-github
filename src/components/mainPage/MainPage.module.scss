@@ -1,0 +1,54 @@
+@use "../../assets/style/Mix";
+
+/* ßß */
+.mainpage_logo {
+  margin-bottom: 5rem;
+  margin-top: -2rem;
+  width: 400px;
+  display: block;
+  @media (max-width: 400px) {
+    width: 300px;
+    margin-bottom: 5rem;
+  }
+}
+.Signup_button {
+  @include Mix.primary-btn;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem auto;
+  min-width: 190px;
+  font-size: 15pt;
+}
+.Signin_button {
+  @include Mix.secondery-btn;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem auto;
+  min-width: 190px;
+  font-size: 15pt;
+}
+
+/* Login */
+
+.login_btn {
+  display: flex;
+  justify-content: end;
+  margin: auto;
+}
+
+/* otp */
+.otp_timer {
+  width: 100%;
+
+  a {
+    &.resend {
+      &:hover {
+        cursor: pointer;
+        color: var(--dark-pen);
+      }
+    }
+    display: block;
+    color: var(--main-pen);
+    font-size: 11pt;
+    margin: 0.75rem 0 0;
+  }
+}
+

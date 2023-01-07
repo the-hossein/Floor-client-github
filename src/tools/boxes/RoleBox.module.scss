@@ -1,0 +1,30 @@
+@use "../../assets/style/Mix";
+.box {
+  @include Mix.border;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.75rem 1.25rem;
+  display: block;
+  h3 {
+    width: 100%;
+    color: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    svg {
+      color: var(--main-pen);
+      font-size: 20pt;
+    }
+    span {
+      margin: 2px 4px;
+      font-size: 14pt;
+    }
+
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 11pt;
+    font-weight: 1.6;
+    color: var(--main-pen);
+    max-width: 92%;
+  }
+}

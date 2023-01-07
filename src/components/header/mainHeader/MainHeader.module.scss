@@ -1,0 +1,29 @@
+@use "../../../assets//style/Mix";
+
+.header {
+  @include Mix.floor-padding;
+  width: auto;
+  display: flex;
+  padding-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  .header_logo {
+    display: flex;
+    justify-content: start;
+
+    img {
+      width: 90px;
+    }
+  }
+  .header_items {
+    > svg {
+      font-size: 24pt;
+      color: var(--main-pen);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: var(--dark-gray);
+        cursor: pointer;
+      }
+    }
+  }
+}

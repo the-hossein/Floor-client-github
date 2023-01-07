@@ -1,0 +1,6 @@
+@use "../../assets/style/Mix";
+.button {
+  @include Mix.primary-btn;
+  margin: 1rem 0;
+  cursor: pointer;
+}

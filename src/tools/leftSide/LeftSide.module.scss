@@ -1,0 +1,23 @@
+.left_side {
+  /* &.ledt_side_with_header {
+    .left_side_content {
+      height: calc(100% - 220px);
+    }
+  } */
+  position: absolute;
+  width: 46%;
+  height: 100%;
+  
+  @media (min-width: 1400px) {
+    width: 58%;
+  }
+  @media (max-width: 1400px) {
+    width: 56%;
+  }
+  @media (max-width: 991px) {
+    width: 62%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}

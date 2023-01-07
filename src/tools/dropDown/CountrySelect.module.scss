@@ -1,0 +1,31 @@
+.item {
+  color: var(--main-pen);
+  font-size: 10pt;
+}
+fieldset {
+  border: none !important;
+}
+.choose_country {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: max-content;
+
+  span {
+    color: var(--main-pen);
+    margin: 0 0.5rem;
+  }
+  .dropdown {
+    min-width: 200px;
+    width: max-content;
+    div {
+      position: unset;
+    }
+
+    button {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}

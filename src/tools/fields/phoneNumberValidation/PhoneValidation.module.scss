@@ -1,0 +1,34 @@
+@use "../../../assets/style/Mix";
+.phone_lable{
+  color: var(--main-pen);
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  svg{
+    color: var(--border-color);
+  }
+  span{
+    margin: 0 4px;
+    font-size: 11pt;
+  }
+}
+.error_border {
+  border-color: var(--error) !important;
+}
+.custome_field {
+  @include Mix.border-card;
+  justify-content: start;
+  min-width: 140px;
+  width: auto;
+  height: 60px;
+  input {
+    width: auto;
+    height: 100%;
+    color: var(--main-pen);
+    font-size: 14pt;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
